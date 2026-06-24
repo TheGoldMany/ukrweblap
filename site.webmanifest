@@ -1,0 +1,13 @@
+{
+  "name": "UKR – Digitális megoldások",
+  "short_name": "UKR",
+  "description": "Weboldalak, webáruházak, web applikációk, ERP és data analytics megoldások vállalkozásoknak.",
+  "lang": "hu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070d",
+  "theme_color": "#06070d",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

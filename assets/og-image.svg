@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06070d"/>
+      <stop offset="1" stop-color="#0c1024"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b86ff"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f6ef7"/>
+      <stop offset="0.55" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.15" cy="0.1" r="0.5">
+      <stop offset="0" stop-color="#4f6ef7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#4f6ef7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.9" cy="0.15" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- grid -->
+  <g stroke="#4f6ef7" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 90 H1200 M0 180 H1200 M0 270 H1200 M0 360 H1200 M0 450 H1200 M0 540 H1200"/>
+    <path d="M90 0 V630 M180 0 V630 M270 0 V630 M360 0 V630 M450 0 V630 M540 0 V630 M630 0 V630 M720 0 V630 M810 0 V630 M900 0 V630 M990 0 V630 M1080 0 V630"/>
+  </g>
+
+  <!-- logo mark -->
+  <g transform="translate(90 90)">
+    <rect width="84" height="84" rx="20" fill="url(#mark)"/>
+    <g fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(42 42)">
+      <path d="M-14 -10 L-24 0 L-14 10"/>
+      <path d="M14 -10 L24 0 L14 10"/>
+      <path d="M5 -15 L-5 15"/>
+    </g>
+    <text x="108" y="58" font-family="'Sora','Segoe UI',sans-serif" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">UKR</text>
+  </g>
+
+  <!-- headline -->
+  <text x="90" y="320" font-family="'Sora','Segoe UI',sans-serif" font-size="74" font-weight="800" fill="#ffffff" letter-spacing="-2">Weboldalak &amp; rendszerek,</text>
+  <text x="90" y="406" font-family="'Sora','Segoe UI',sans-serif" font-size="74" font-weight="800" fill="url(#accent)" letter-spacing="-2">amelyek ügyfelet hoznak.</text>
+
+  <!-- subline -->
+  <text x="92" y="470" font-family="'Inter','Segoe UI',sans-serif" font-size="30" font-weight="500" fill="#9298ba">Weboldal · Webáruház · Web app · ERP · Data Analytics</text>
+
+  <!-- grant chip -->
+  <g transform="translate(90 512)">
+    <rect width="430" height="56" rx="28" fill="#f5b94a" fill-opacity="0.12" stroke="#f5b94a" stroke-opacity="0.4"/>
+    <circle cx="34" cy="28" r="9" fill="#f5b94a"/>
+    <text x="58" y="37" font-family="'Inter','Segoe UI',sans-serif" font-size="24" font-weight="600" fill="#ffd98a">Akár pályázati támogatásból</text>
+  </g>
+
+  <!-- url -->
+  <text x="1110" y="560" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="26" fill="#6b7290">ukrdigital.hu</text>
+</svg>
