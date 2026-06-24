@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kocsis Richárd – Webfejlesztés & Digitális Megoldások</title>
+  <meta name="description" content="Egyéni vállalkozó webfejlesztő. Weblapok, web applikációk, ERP rendszerek, data analytics megoldások." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">KR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Rólam</a></li>
+        <li><a href="#services">Szolgáltatások</a></li>
+        <li><a href="#portfolio">Portfólió</a></li>
+        <li><a href="#contact" class="nav-cta">Kapcsolat</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Rólam</a></li>
+      <li><a href="#services" class="mobile-link">Szolgáltatások</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfólió</a></li>
+      <li><a href="#contact" class="mobile-link">Kapcsolat</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Elérhető új projektekre
+      </div>
+      <h1 class="hero-title">
+        Digitális megoldások,<br />
+        <span class="gradient-text">ami valóban működik.</span>
+      </h1>
+      <p class="hero-sub">
+        Weblapokat, web applikációkat, ERP rendszereket és data analytics megoldásokat készítek vállalkozások számára – az első kódtól a működő termékig.
+      </p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn btn-primary">Munkáim megtekintése</a>
+        <a href="#contact" class="btn btn-ghost">Kapcsolatfelvétel</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Elkészült projekt</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Elégedett ügyfél</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Év tapasztalat</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="w-dot red"></span>
+          <span class="w-dot yellow"></span>
+          <span class="w-dot green"></span>
+          <span class="w-filename">app.js</span>
+        </div>
+        <pre class="code-content"><code><span class="c-kw">const</span> <span class="c-fn">buildSolution</span> = <span class="c-kw">async</span> (<span class="c-param">client</span>) =&gt; {
+  <span class="c-kw">const</span> vision = <span class="c-kw">await</span> understand(client);
+  <span class="c-kw">const</span> design = craft(vision, {
+    clean: <span class="c-bool">true</span>,
+    fast: <span class="c-bool">true</span>,
+    scalable: <span class="c-bool">true</span>
+  });
+  <span class="c-kw">return</span> deploy(design);
+};
+
+<span class="c-comment">// Minden projekt egy ígéret.</span>
+buildSolution(<span class="c-str">"te vállalkozásod"</span>);</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag">Rólam</div>
+          <h2>Kocsis Richárd,<br /><span class="gradient-text">egyéni vállalkozó fejlesztő.</span></h2>
+          <p>
+            Szenvedélyem a komplex problémák elegáns technikai megoldásokká alakítása. Legyen szó egy egyszerű bemutatkozó oldalról, egy összetett ERP rendszerről vagy adatelemző platformról – minden projektet ugyanolyan precizitással és odafigyeléssel készítek el.
+          </p>
+          <p>
+            Hívők vagyok abban, hogy a jó szoftver nem csak működik, hanem öröm használni. Ezért foglalkozom az UX-szel legalább annyira, mint a háttérkóddal.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-label">Tech stack:</span>
+            <div class="techs">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">Plotly</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="value-cards">
+            <div class="value-card">
+              <div class="vc-icon">⚡</div>
+              <h4>Gyors átfutás</h4>
+              <p>Határidőre szállítok, kompromisszumok nélkül.</p>
+            </div>
+            <div class="value-card">
+              <div class="vc-icon">🎯</div>
+              <h4>Üzleti fókusz</h4>
+              <p>A technológia az üzleti célokat szolgálja, nem fordítva.</p>
+            </div>
+            <div class="value-card">
+              <div class="vc-icon">🔒</div>
+              <h4>Megbízhatóság</h4>
+              <p>Átlátható kommunikáció és folyamatos support.</p>
+            </div>
+            <div class="value-card">
+              <div class="vc-icon">📈</div>
+              <h4>Skálázhatóság</h4>
+              <p>Olyan rendszereket építek, amik veled növekednek.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Szolgáltatások</div>
+        <h2>Mit tudok neked<br /><span class="gradient-text">megvalósítani?</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card featured">
+          <div class="sc-number">01</div>
+          <div class="sc-icon">🌐</div>
+          <h3>Weblap & Web App fejlesztés</h3>
+          <p>Egyedi, reszponzív weblapok és full-stack web applikációk tervezése és fejlesztése, modern technológiákkal.</p>
+          <ul class="sc-list">
+            <li>Bemutatkozó és céges weboldalak</li>
+            <li>E-commerce megoldások</li>
+            <li>Single Page Applications</li>
+            <li>PWA (Progressive Web Apps)</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">02</div>
+          <div class="sc-icon">🏭</div>
+          <h3>ERP & Üzleti rendszerek</h3>
+          <p>Bonyolult belső folyamatok digitalizálása, testre szabott vállalatirányítási szoftverek fejlesztése.</p>
+          <ul class="sc-list">
+            <li>Készletkezelés</li>
+            <li>Számlázás & pénzügy</li>
+            <li>CRM integráció</li>
+            <li>Folyamatautomatizálás</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">03</div>
+          <div class="sc-icon">📊</div>
+          <h3>Data Analytics & Dashboard</h3>
+          <p>Adatok vizualizálása, elemzése és interaktív dashboard-ok fejlesztése döntéshozatal támogatásához.</p>
+          <ul class="sc-list">
+            <li>Interaktív riportok</li>
+            <li>Real-time dashboardok</li>
+            <li>Statisztikai elemzés</li>
+            <li>Prediktív modellek</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">04</div>
+          <div class="sc-icon">🤖</div>
+          <h3>Automatizálás & Integráció</h3>
+          <p>Ismétlődő feladatok automatizálása, API integrációk, scraping és adatfeldolgozó pipeline-ok.</p>
+          <ul class="sc-list">
+            <li>API fejlesztés & integráció</li>
+            <li>Web scraping</li>
+            <li>Workflow automatizálás</li>
+            <li>Adatmigráció</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Portfólió</div>
+        <h2>Néhány korábbi<br /><span class="gradient-text">munkám.</span></h2>
+        <p class="section-sub">Valós projekteket mutatnak be – mindegyik más kihívást, más technológiát és más eredményt képvisel.</p>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Összes</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- FOOTBALL ANALYTICS -->
+        <div class="portfolio-card large" data-cat="analytics">
+          <div class="pc-visual football-vis">
+            <div class="pitch">
+              <div class="pitch-lines">
+                <div class="center-circle"></div>
+                <div class="center-line"></div>
+                <div class="penalty-box left"></div>
+                <div class="penalty-box right"></div>
+              </div>
+              <div class="heat-dots">
+                <div class="hdot" style="top:30%;left:20%;opacity:.9;width:18px;height:18px;"></div>
+                <div class="hdot" style="top:50%;left:15%;opacity:.7;width:14px;height:14px;"></div>
+                <div class="hdot" style="top:65%;left:25%;opacity:.8;width:16px;height:16px;"></div>
+                <div class="hdot" style="top:40%;left:50%;opacity:1;width:22px;height:22px;"></div>
+                <div class="hdot" style="top:20%;left:70%;opacity:.85;width:17px;height:17px;"></div>
+                <div class="hdot" style="top:55%;left:80%;opacity:.9;width:20px;height:20px;"></div>
+                <div class="hdot" style="top:70%;left:60%;opacity:.75;width:13px;height:13px;"></div>
+                <div class="hdot" style="top:35%;left:38%;opacity:.95;width:19px;height:19px;"></div>
+              </div>
+              <div class="chart-overlay">
+                <div class="mini-bar-chart">
+                  <div class="bar" style="height:60%"><span>xG</span></div>
+                  <div class="bar" style="height:80%"><span>Pass%</span></div>
+                  <div class="bar" style="height:45%"><span>Shot</span></div>
+                  <div class="bar" style="height:95%"><span>Press</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-content">
+            <div class="pc-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Dash</span>
+            </div>
+            <h3>Futball Data Analytics Platform</h3>
+            <p>Interaktív analitikai platform futball mérkőzések és játékosok teljesítményének elemzésére. Hőtérképek, xG modellek, passzolási hálózatok és szezon-összehasonlítók.</p>
+            <div class="pc-highlights">
+              <div class="highlight">
+                <span class="hl-num">500+</span>
+                <span class="hl-label">Elemzett mérkőzés</span>
+              </div>
+              <div class="highlight">
+                <span class="hl-num">12</span>
+                <span class="hl-label">Interaktív chart típus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALLAT MENHELY -->
+        <div class="portfolio-card" data-cat="web">
+          <div class="pc-visual shelter-vis">
+            <div class="shelter-mockup">
+              <div class="mock-header">
+                <div class="mock-logo-area">
+                  <div class="paw-icon">🐾</div>
+                  <span>Állatmenhely</span>
+                </div>
+                <div class="mock-nav-dots">
+                  <div class="mnav"></div>
+                  <div class="mnav"></div>
+                  <div class="mnav"></div>
+                </div>
+              </div>
+              <div class="mock-hero-banner">
+                <div class="mock-animal-cards">
+                  <div class="mac">
+                    <div class="mac-img dog"></div>
+                    <div class="mac-name">Bodri</div>
+                    <div class="mac-badge available">Örökbefogadható</div>
+                  </div>
+                  <div class="mac">
+                    <div class="mac-img cat"></div>
+                    <div class="mac-name">Mici</div>
+                    <div class="mac-badge available">Örökbefogadható</div>
+                  </div>
+                  <div class="mac">
+                    <div class="mac-img dog2"></div>
+                    <div class="mac-name">Rex</div>
+                    <div class="mac-badge pending">Folyamatban</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-content">
+            <div class="pc-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <h3>Állatmenhelyek Online Platformja</h3>
+            <p>Modern webalkalmazás állatmenhelyek számára, amelyen az örökbefogadók böngészhetik az elérhető állatokat, kereshetnek, szűrhetnek és online jelentkezhetnek.</p>
+            <div class="pc-highlights">
+              <div class="highlight">
+                <span class="hl-num">3</span>
+                <span class="hl-label">Integrált menhely</span>
+              </div>
+              <div class="highlight">
+                <span class="hl-num">200+</span>
+                <span class="hl-label">Regisztrált felhasználó</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KONCSORBŐR -->
+        <div class="portfolio-card" data-cat="web">
+          <div class="pc-visual leather-vis">
+            <div class="leather-mockup">
+              <div class="leather-hero">
+                <div class="leather-texture"></div>
+                <div class="leather-overlay">
+                  <div class="lo-title">KONCSORBŐR</div>
+                  <div class="lo-sub">Kézműves bőráru</div>
+                  <div class="lo-products">
+                    <div class="lp-item">
+                      <div class="lp-img wallet"></div>
+                      <span>Pénztárca</span>
+                    </div>
+                    <div class="lp-item">
+                      <div class="lp-img belt"></div>
+                      <span>Öv</span>
+                    </div>
+                    <div class="lp-item">
+                      <div class="lp-img bag"></div>
+                      <span>Táska</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-content">
+            <div class="pc-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+            </div>
+            <h3>Koncsorbőr – Kézműves Bőráru Webshop</h3>
+            <p>Prémium megjelenésű webshop kézzel készített bőrtermékekhez. Egyedi termékgaléria, kosár funkció és rendeléskezelő rendszer.</p>
+            <div class="pc-highlights">
+              <div class="highlight">
+                <span class="hl-num">40+</span>
+                <span class="hl-label">Termék online</span>
+              </div>
+              <div class="highlight">
+                <span class="hl-num">+60%</span>
+                <span class="hl-label">Online forgalom növekedés</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JAP-TECH HUNGARY -->
+        <div class="portfolio-card large" data-cat="web">
+          <div class="pc-visual japtech-vis">
+            <div class="japtech-mockup">
+              <div class="jt-sidebar">
+                <div class="jt-logo">JAP<span>TECH</span></div>
+                <div class="jt-nav">
+                  <div class="jt-nav-item active">Dashboard</div>
+                  <div class="jt-nav-item">Termékek</div>
+                  <div class="jt-nav-item">Rendelések</div>
+                  <div class="jt-nav-item">Kapcsolat</div>
+                </div>
+              </div>
+              <div class="jt-main">
+                <div class="jt-topbar">
+                  <div class="jt-search"></div>
+                  <div class="jt-avatar"></div>
+                </div>
+                <div class="jt-content">
+                  <div class="jt-cards-row">
+                    <div class="jt-card"><div class="jt-card-val">¥ 2.4M</div><div class="jt-card-label">Import érték</div></div>
+                    <div class="jt-card accent"><div class="jt-card-val">148</div><div class="jt-card-label">Aktív termék</div></div>
+                  </div>
+                  <div class="jt-chart-area">
+                    <div class="jt-line-chart">
+                      <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                        <polyline points="0,70 40,50 80,60 120,20 160,35 200,10" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+                        <polyline points="0,70 40,50 80,60 120,20 160,35 200,10 200,80 0,80" fill="rgba(59,130,246,0.1)" stroke="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-content">
+            <div class="pc-tags">
+              <span class="tag">React</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">REST API</span>
+            </div>
+            <h3>Jap-Tech Hungary – Vállalati Weboldal & Rendszer</h3>
+            <p>Japán technológiai importőr cég teljes digitális jelenléte: céges bemutatkozó oldal, termék-katalógus és belső rendeléskezelő dashboard adminisztrátoroknak.</p>
+            <div class="pc-highlights">
+              <div class="highlight">
+                <span class="hl-num">150+</span>
+                <span class="hl-label">Katalógusbejegyzés</span>
+              </div>
+              <div class="highlight">
+                <span class="hl-num">2</span>
+                <span class="hl-label">Integrált rendszer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Folyamat</div>
+        <h2>Hogyan dolgozom<br /><span class="gradient-text">veled együtt?</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h4>Konzultáció</h4>
+            <p>Megismerem az igényeidet, az üzleti céljaidat és a határidőket. Ingyenes, kötelezettség nélkül.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h4>Tervezés</h4>
+            <p>Elkészítem az ajánlatot, a technikai tervet és a design koncepciókat. Jóváhagyás után kezdünk.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h4>Fejlesztés</h4>
+            <p>Iteratív fejlesztés rendszeres visszajelzésekkel. Mindig látod, hol tart a projekt.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h4>Átadás & Support</h4>
+            <p>Éles indítás, oktatás és folyamatos karbantartási lehetőség.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-tag">Kapcsolat</div>
+          <h2>Kezdjük el<br /><span class="gradient-text">együtt!</span></h2>
+          <p>Legyen egy ötleted, egy problémád, vagy csak kíváncsi vagy mibe kerülne egy projekt – írj bátran. Általában 24 órán belül válaszolok.</p>
+          <div class="contact-info">
+            <a href="mailto:terrarisztika1@gmail.com" class="ci-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-val">terrarisztika1@gmail.com</div>
+              </div>
+            </a>
+            <div class="ci-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Helyszín</div>
+                <div class="ci-val">Magyarország</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">🕐</div>
+              <div>
+                <div class="ci-label">Válaszidő</div>
+                <div class="ci-val">24 órán belül</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Neved</label>
+                <input type="text" id="name" name="name" placeholder="Kovács János" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email cím</label>
+                <input type="email" id="email" name="email" placeholder="pelda@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project">Projekt típusa</label>
+              <select id="project" name="project">
+                <option value="">Válassz kategóriát...</option>
+                <option>Weblap fejlesztés</option>
+                <option>Web applikáció</option>
+                <option>ERP / Üzleti rendszer</option>
+                <option>Data Analytics</option>
+                <option>Automatizálás</option>
+                <option>Egyéb</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Üzenet</label>
+              <textarea id="message" name="message" rows="5" placeholder="Írd le röviden a projektet, az elképzeléseid és a határidőt..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Üzenet küldése</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo">KR<span class="dot">.</span></a>
+        <p class="footer-copy">© 2025 Kocsis Richárd – Egyéni vállalkozó. Minden jog fenntartva.</p>
+        <div class="footer-links">
+          <a href="mailto:terrarisztika1@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
